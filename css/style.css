@@ -15,6 +15,19 @@ body {
   padding: 0;
 }
 
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 @media(max-width: 640px){
     
     
@@ -574,7 +587,6 @@ body {
   font-weight: bold;
 }
 
-
 .shop {
     width: 91.6vw;
     margin-right: 4.16vw;
@@ -597,33 +609,21 @@ body {
     border-bottom: 3px solid #e1d9bd;
     font-weight: bold;
 }
-.shop-item-1 {
-    background-image: url("../images/shop-item-mobile1.jpg");
-    background-repeat: no-repeat;
-    padding-top: 252px;
-    background-position: top center;
-    margin-bottom: 3.06vh;
+.shop-block {}
+.shop-item {
     
 }
-.shop-item-2 {
-    background-image: url("../images/shop-item-mobile2.jpg");
-    background-repeat: no-repeat;
-    padding-top: 252px;
-    background-position: top center;
-    margin-bottom: 3.06vh;
-    
-}
-.shop-item-3 {
-    background-image: url("../images/shop-item-mobile3.jpg");
-    background-repeat: no-repeat;
-    padding-top: 252px;
-    background-position: top center;
-    margin-bottom: 3.06vh;
-    
+.shop-item-img-box {}
+.shop-item-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .shop-item-body {
     border: 3px solid #b59f5b;
     box-sizing: border-box;
+    position: relative;
+    top: -33px;
 }
 .shop-item-title {
     padding-top: 25px;
@@ -643,12 +643,7 @@ body {
 .shop-item-content-link {
     font-size: 15px;
     color: #b59f5b;
-}
-.shop-item-content-link-2 {
-    font-size: 15px;
     text-decoration: none;
-    color: #b59f5b;
-    
 }
 .shop-item-footer {
     display: flex;
@@ -688,6 +683,7 @@ body {
     height: 5.48vh;
     border: 1px solid #b59f5b;
 }
+
 
 
 .footer{
@@ -732,7 +728,7 @@ body {
    
 }
 
-@media(min-width: 641px) and (max-width: 1200px) {
+@media(min-width: 640px) and (max-width: 1200px) {
     .header {
        background-image: url("../images/banner-bg-tablet.jpg");
        background-repeat: no-repeat;
@@ -1148,7 +1144,7 @@ body {
        cursor: pointer;
 }
     .search-icon {
-       width: 2.34vw;
+       width: 2.21vw;
        margin: auto;
 }
     
@@ -1303,19 +1299,21 @@ body {
        font-weight: bold;
 }
     
+
     .shop {
-       width: 700px;
-       flex-direction: row;
-       flex-wrap: wrap;
-       
+    width: 90.88vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
 }
-.shop-title{
+    .shop-title{
     text-transform: uppercase;
     text-align: center;
     font-family:OpenSans-Bold;
-    font-size: 16px;
+    font-size: 18px;
 }
-.shop-title::after {
+    .shop-title::after {
     content: "";
     margin:auto;
     display: block;
@@ -1324,85 +1322,82 @@ body {
     border-bottom: 3px solid #e1d9bd;
     font-weight: bold;
 }
-.shop-item-1 {
-    background-image: url("../images/shop-item-tablet1.jpg");
-    background-repeat: no-repeat;
-    padding-top: 252px;
+    .shop-block {
+    display:flex;
+    flex-wrap: wrap;
+    }
+    .shop-item {
+    width: 43.5vw;
     
-    margin-bottom: 3.06vh;
-    width: 300px;
     
-}
-.shop-item-2 {
-    background-image: url("../images/shop-item-tablet2.jpg");
-    background-repeat: no-repeat;
-    padding-top: 252px;
-    
-    margin-bottom: 3.06vh;
-    width: 300px;
     
 }
-.shop-item-3 {
-    background-image: url("../images/shop-item-tablet3.jpg");
-    background-repeat: no-repeat;
-    padding-top: 252px;
-    margin-bottom: 3.06vh;
-    width: 300px;
-    
+    .shop-item:nth-child(0n+2) {
+        margin-left: 2.73vw;
+    }
+    .shop-item-img-box {}
+    .shop-item-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-.shop-item-body {
+    .shop-item-body {
     border: 3px solid #b59f5b;
     box-sizing: border-box;
+    position: relative;
+    top: -33px;
+    height: 258px;
 }
-.shop-item-title {
-    padding-top: 25px;
+    .shop-item-title {
     text-transform: uppercase;
     font-family:OpenSans-Bold;
-    font-size: 16px;
+    font-size: 17px;
+    padding-top: 25px;
+    padding-right: 2.6vw;
+    padding-left: 2.6vw;
 }
-.shop-item-description {
+    .shop-item-description {
+    padding-right: 5.2vw;
+    padding-left: 2.6vw;
 }
-.shop-item-content {
+    .shop-item-content {
     font-size: 15px;
-}
-.shop-item-content-link {
-    font-size: 15px;
-    color: #b59f5b;
-}
-.shop-item-content-link-2 {
-    font-size: 15px;
-    text-decoration: none;
-    color: #b59f5b;
+    
     
 }
-.shop-item-footer {
+    .shop-item-content-link {
+    font-size: 15px;
+    color: #b59f5b;
+    text-decoration: none;
+}
+    .shop-item-footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-self: flex-end;
-    margin-bottom: 2.95vh;
-    
+    padding-right: 1.95vw;
+    padding-left: 1.95vw;
 }
-.shop-item-prices {
+    .shop-item-prices {
     font-weight: 700;
     color: #222;
     line-height: 1;
     display: flex;
     flex-direction: column;
     align-self: flex-end;
-    padding-bottom: 10px;
+    
 }
-.shop-item-price-old {
+    .shop-item-price-old {
     text-decoration: line-through;
     font-size: 14px;
-    margin-bottom: 0.56vh;
+    
 }
-.shop-item-price {
+    .shop-item-price {
     font-size: 20px;
 }
-.shop-item-button {
-    margin-right: 4.16vw;
-    width: 38.8vw;
+    .shop-item-button {
+    width: 18.22vw;
+    height: 48px;
     text-align: center;
     cursor: pointer;
     background: #b59f5b;
@@ -1410,24 +1405,22 @@ body {
     font-family:OpenSans-Bold;
     font-size: 14px;
     text-transform: uppercase;
-    height: 5.48vh;
     border: 1px solid #b59f5b;
 }
 
-
-.footer{
+    .footer{
   margin-left: auto;
   margin-right: auto;
-  width: 91.6vw;
+  width: 90.88vw;
   height: auto;
 }
-.footer-container {
+    .footer-container {
   margin-left: auto;
   margin-right: auto;
   background-color: #f4f7f6;
-  width: 91.6vw;
+  width: 90.88vw;
 }
-.socials{
+    .socials{
   justify-content: center;
   align-items: center;
   display:flex;
@@ -1435,26 +1428,27 @@ body {
   padding: 0;
   margin: 0;
 }
-.footer-logo {
-  padding-top: 3.52vh;
-  padding-bottom: 3.52vh; 
-  padding-left: 2.7vw;
-  padding-right: 2.7vw;
-  width: 5.5vw;
-  height 2.27vh;
+    .footer-logo {
+  padding-top: 31px;
+  padding-bottom: 31px; 
+  padding-left: 1.95vw;
+  padding-right: 1.95vw;
+  width: 2.6vw;
+  
   display: inline-block;
 }
-.footer-copyright{
-  padding-top: 5.67vh;
+    .footer-copyright{
+  padding-top: 50px;
   text-align: center;
 }
-.footer-link {
+    .footer-link {
   text-decoration: none;
   color: #999999;
   font-style: normal;
   
 }
-
+    
+}
 
 
     
