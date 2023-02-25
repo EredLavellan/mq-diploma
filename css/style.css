@@ -110,6 +110,7 @@ body {
 .card-img {
   padding:0;
   margin:0;
+  background-color: #666666;
 }
 .teg-list{
   list-style: none;
@@ -137,7 +138,7 @@ body {
   font-family:OpenSans-Bold;
 }
 .card-name:hover {
-  text-shadow: 0px 0px 1px black;
+  text-shadow: 0px 0px 1px #b59f5b;
 }
 .card-name-link {
   text-decoration: none;
@@ -188,7 +189,7 @@ body {
   color: black;
 }
 .post-link:hover {
-  text-shadow: 0px 0px 0.5px black;
+  text-shadow: 0px 0px 0.5px #b59f5b;
 }
 
 .search {
@@ -202,6 +203,9 @@ body {
   outline: none;
   background: #f4f7f6;
   color: #9E9C9C;
+}
+.field:focus {
+    border-bottom: 1px solid #ebe7d7;
 }
 .button-search {
   position: absolute; 
@@ -289,7 +293,7 @@ body {
   line-height: auto;
 }
 .tegs-link:hover {
-  text-shadow: 0px 0px 0.5px black;
+  text-shadow: 0px 0px 0.5px #0f0d0e;
 }
 
 .topics-title {
@@ -318,7 +322,7 @@ body {
   font-family:OpenSans-Bold;
 }
 .topics-link:hover {
-  text-shadow: 0px 0px 0.5px black;
+  text-shadow: 0px 0px 0.5px #b59f5b;
 }
 .topics-list-item::after {
   content: "";
@@ -332,6 +336,7 @@ body {
 .number {
   color:#b59f5b;
   font-weight: bold;
+  vertical-align: super;
 }
 
 .shop-item-content-link:hover {
@@ -449,7 +454,7 @@ select {
     padding-right: 35px;
     background-size: 10px;
 }
-.radio-form-group {
+.radio-forma-group {
     display: flex;
     flex-direction: column;
 }
@@ -1071,7 +1076,7 @@ select {
     padding-right: 35px;
     background-size: 10px;
 }
-.radio-form-group {
+.radio-forma-group {
     display: flex;
     flex-direction: column;
 }
@@ -1726,7 +1731,7 @@ select {
     padding-right: 35px;
     background-size: 10px;
 }
-.radio-form-group {
+.radio-forma-group {
     display: flex;
     flex-direction: column;
 }
@@ -1828,10 +1833,13 @@ select {
   height: inherit;
   justify-content: space-between;
   align-items: center;
-  width:72.3vw;
+  width:1200px;
   margin-left: auto;
   margin-right:auto;
 }
+    .menu-list {
+        padding: 0;
+    }
     .header-logo {
   width: 10.78vw;
   margin-top: 28px;
@@ -1843,10 +1851,13 @@ select {
         display: none;
     }
     .menu-list-item-link {
+  text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
   font-family:OpenSans;
   font-size: 13px;
+  padding:0;
+  margin: 0;
 }
     .menu-list-item-link:hover {
   text-decoration:underline;
@@ -1989,16 +2000,15 @@ select {
        margin-right: auto;
        margin-left: auto;
        width: 364px;
-       
-        
+       padding-right: 31px;
+       padding-left: 31px;
+       padding-top: 36px;
 }
     .trend-tegs-list {
        list-style: none;
        padding: 0;
        margin: 0;
-       padding-right: 31px;
-       padding-left: 31px;
-       padding-top: 36px;
+       
 }
     .trend-teg-list-item {
        display: inline-block;
@@ -2010,11 +2020,8 @@ select {
        font-size: 14px;
        font-weight: bold;
        font-family:OpenSans-Bold;
-       margin-right: 20px;
-}
-    .trend-area-title {
-       padding-right: 31px;
-       padding-left: 31px;
+        margin-right: 20px;
+      
 }
     .trend-area-title-link {
        text-transform: uppercase;
@@ -2047,6 +2054,7 @@ select {
 }
 .card-img {
   width: 381px;
+  background-color: #666666;
 }
 .card-area {
   width: 371px;
@@ -2185,7 +2193,7 @@ select {
 }
   
     .shop {
-    width: 71.38vw;
+    width: 1200px;
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -2213,10 +2221,10 @@ select {
     margin-right: auto;
     }
     .shop-item {
-    width: 20.54vw;
+    width: 341px;
 }
     .shop-item:nth-child(1n+2) {
-        margin-left: 4vw;
+        margin-left: 66px;
     }
     .shop-item-img {
     display: block;
@@ -2228,7 +2236,7 @@ select {
     box-sizing: border-box;
     position: relative;
     top: -33px;
-    height: 258px;
+    height: 261px;
 }
     .shop-item-title {
     text-transform: uppercase;
@@ -2241,6 +2249,8 @@ select {
     .shop-item-description {
     padding-right: 1.5vw;
     padding-left: 1.2vw;
+    font-family:OpenSans;
+    font-size: 15px;
 }
     .shop-item-content {
     font-size: 15px;
@@ -2287,10 +2297,10 @@ select {
 }  
       
 .footer{
-  width: 70.5vw;
+  width: 1170px;
 }
 .footer-container {
-  width: 70.5vw;
+  width: 1170px;
   height: 83px; 
 }
 .socials-item {
