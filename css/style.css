@@ -1675,7 +1675,6 @@ select {
     height: 100%;
     z-index: 5;
     display:none;
-    
 }
 .popup::after {
   content: "";
