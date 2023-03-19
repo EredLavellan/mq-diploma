@@ -140,7 +140,7 @@ body {
   text-transform: uppercase;
   font-family:OpenSans-Bold;
 }
-.card-name:hover {
+.card-name-link:hover {
   font-family:OpenSans-Bold;
   color: #b59f5b;
 }
@@ -194,6 +194,8 @@ body {
 }
 .post-link:hover {
   cursor: pointer;
+  font-family:OpenSans-Bold;
+  color: #b59f5b;
 }
 
 .search {
@@ -253,6 +255,9 @@ body {
   background: #f4f7f6;
   color: #9E9C9C;
 }
+.field-2:focus {
+    border-bottom: 1px solid #ebe7d7;
+}
 .button-subscription {
   border: 2px solid #b59f5b;
   cursor: pointer;
@@ -286,7 +291,7 @@ body {
 }
 .tegs-list-item {
   box-sizing: border-box;
-  border: 3px solid #dfdee8;
+  border: 3px solid #eeeeee;
 }
 .tegs-link {
   text-transform: uppercase;
@@ -352,9 +357,6 @@ body {
   text-decoration:underline;
   text-decoration-color: #b59f5b;
 }
-.shop-item-description:hover {
-  text-shadow: 0px 0px 1px black;
-}
 
 .footer {
   margin-left: auto;
@@ -386,6 +388,7 @@ body {
   color: #999999;
   font-style: normal;
   font-family:OpenSans-Bold;
+  font-size: 12px;
 }
 
 @media(max-width: 640px){
@@ -1671,7 +1674,8 @@ select {
     width: 100%;
     height: 100%;
     z-index: 5;
-    display: none;
+    
+    
 }
 .popup::after {
   content: "";
@@ -1735,6 +1739,9 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+.select:focus {
+        border-bottom: 1px solid #ebe7d7; 
+    }
 select {
     background-image: url("../svg/form-arrows.svg");
     background-repeat: no-repeat;
@@ -1789,6 +1796,7 @@ select {
     display: flex;
     flex-direction: column;
 }
+
 .field-label {
     font-size: 13px;
     padding-bottom: 12px;
@@ -1797,6 +1805,9 @@ select {
 .field-group {
     width:330px;
 }
+.field-group:focus {
+        border-bottom: 1px solid #ebe7d7; 
+    }
 .textarea {
     min-width: 311px;
     max-width: 311px;
@@ -1808,6 +1819,10 @@ select {
     background-color: #f4f7f6;
     border: none;
 }
+textarea:focus {
+    border:none;
+    border-bottom: 1px solid #ebe7d7;  
+    }
 .sign-up-row {
     padding-top: 27px;
     padding-bottom: 30px;
