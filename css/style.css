@@ -1012,7 +1012,32 @@ select {
    
 }
 
-@media(max-width: 640px), (orientation: landscape) {  
+@media(max-width: 640px) and (orientation: landscape) {  
+   
+    .trend-section {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .trend-card-1 {
+        width: 49vw;
+    }
+    .trend-card-2 {
+        width: 49vw;
+        margin:0;
+        
+    }
+    .trend-card-3 {
+        width: 49vw;
+    }
+    .trend-card-4 {
+        width: 49vw;
+        margin:0;
+        
+    }
+    .trend-area {
+        width:45vw;
+    }
 }
 
 @media(min-width: 640px) and (max-width: 1200px) {
@@ -1669,6 +1694,33 @@ select {
   padding-top: 50px;
 }
     
+}
+
+@media(min-width: 640px) and (max-width: 1200px) and (orientation: landscape) {
+    .trend-section {
+        display:flex;
+        flex-direction: row;
+    
+    }
+    .trend-card-1 {
+        width: 24.5vw;
+    }
+    .trend-card-2 {
+        width: 24.5vw;
+        margin:0;
+        
+    }
+    .trend-card-3 {
+        width: 24.5vw;
+    }
+    .trend-card-4 {
+        width: 24.5vw;
+        margin:0;
+        
+    }
+    .trend-area {
+        width:23vw;
+    }
 }
 
 @media(min-width: 1200px) {
