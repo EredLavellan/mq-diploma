@@ -1019,20 +1019,36 @@ select {
         flex-direction: row;
         flex-wrap: wrap;
     }
+    .trend-teg-list-link {
+        font-size: 12px;
+    }
+    .trend-area-title-link {
+        font-size: 12px;
+    }
+    .trend-teg-list-item {
+        font-size: 12px;
+    }
+    .trend-area-title {
+        font-size: 12px;
+    }
     .trend-card-1 {
         width: 49vw;
+        font-size: 12px;
     }
     .trend-card-2 {
         width: 49vw;
         margin:0;
+        font-size: 12px;
         
     }
     .trend-card-3 {
         width: 49vw;
+        font-size: 12px;
     }
     .trend-card-4 {
         width: 49vw;
         margin:0;
+        font-size: 12px;
         
     }
     .trend-area {
@@ -1701,6 +1717,18 @@ select {
         display:flex;
         flex-direction: row;
     
+    }
+     .trend-teg-list-link {
+        font-size: 14px;
+    }
+    .trend-area-title-link {
+        font-size: 14px;
+    }
+    .trend-teg-list-item {
+        font-size: 14px;
+    }
+    .trend-area-title {
+        font-size: 14px;
     }
     .trend-card-1 {
         width: 24.5vw;
